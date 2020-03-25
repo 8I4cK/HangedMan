@@ -2,8 +2,7 @@
 # def para embaralhar a lista(ver a opção de fzer isso como dicionario)
 # def para pedir o input de uma letra
 # def para ver se existe um letra na palavra selecionada..
-# def para definir o maximo de tenttivas a mais que a maior palavra... +7
-import random
+# def para definir o maximo de tenttivas a mais que a maior palavra... +5
 class HangManGame:
     def __init__(self):
         pass
@@ -42,17 +41,17 @@ class Player:
     def set_players_name(self):
         p_name = str(input("Please enter the player's name:\n» "))
         self.__p_name = p_name
-        
+
 class ChosenLetter:
 
     def __init__(self):
         self.__chosen_letter = ''
         self.__wrong_guessed_letter = []
         self.__correct_guessed_letter = []
-        
-        
+
+
     def get_wrong_players_guess(self):
-        return self.__wrong_guessed_letter    
+        return self.__wrong_guessed_letter
     def set_wrong_players_guess(self):
         self.__wrong_guessed_letter.append(self.__chosen_letter)
         return self.__wrong_guessed_letter
@@ -63,7 +62,7 @@ class ChosenLetter:
     def set_correct_players_guess(self):
         self.__correct_guessed_letter.append(self.__chosen_letter)
         return self.__correct_guessed_letter
-    
+
     
     def get_chosen_letter(self):
         return self.__chosen_letter
