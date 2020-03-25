@@ -6,9 +6,7 @@
 import random
 class HangManGame:
     def __init__(self):
-        self.player_wrong_guess = []
-        self.player_correct_guess = []
-        self.random_word = []
+        pass
 
 
     def principal_menu(self):
@@ -40,17 +38,19 @@ class Player:
         self.__wrong_guessed_letter = []
         self.__correct_guessed_letter = []
 
-    def return_player_name(self):
+    def return_players_name(self):
         self.__p_name = input("Please enter the player's name:\n» ")
         return self.__p_name
 
-    def return_wrong_player_guess(self):
-        self.__wrong_guessed_letter = input('Please enter a letter: \n» ')
+    def return_wrong_players_guess(self):
+        self.__wrong_guessed_letter = input(f"{self.__p_name}, you've guessed the wrong letter, "
+                                            f"please enter a new letter: \n» ")
         return self.__wrong_guessed_letter
 
-    def return_correct_player_guess(self):
-        self.__correct_guessed_letter = input('Please enter a letter: \n» ')
+    def return_correct_players_guess(self):
+        self.__correct_guessed_letter = input(f'{self.__p_name}, please enter a letter: \n» ')
         return self.__correct_guessed_letter
+
 
 import random
 class FruitList:
@@ -59,28 +59,16 @@ class FruitList:
         self.__fruits = ['banana', 'jabuticaba', 'pitanga', 'mirtilo', 'morango', 'abacaxi', 'cereja']
 
 
-    def chose_random_list(self, fruit):
-        for fruit in len(self.__fruits):
-
-        return self.__random_list
-
-
-class PlayerGuesses:
-    def __init__(self):
-        pass
-        
-
-
-
-
-
-    def random_word_list(self):
-        pass
+    def chose_random_word_from_list(self):
+        fruit = self.__fruits
+        return random.choice(fruit)
 
 
 
 
 
 
-h = Player()
-print(h.return_player_name())
+
+
+h = FruitList()
+print(h.chose_random_word_from_list())
