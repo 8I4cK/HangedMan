@@ -35,21 +35,41 @@ _|___
 class Player:
     def __init__(self):
         self.__p_name = ''
+
+
+    def get_players_name(self) -> str:
+        return self.__p_name
+    def set_players_name(self):
+        p_name = str(input("Please enter the player's name:\n» "))
+        self.__p_name = p_name
+        
+class ChosenLetter:
+
+    def __init__(self):
+        self.__chosen_letter = ''
         self.__wrong_guessed_letter = []
         self.__correct_guessed_letter = []
-
-    def return_players_name(self):
-        self.__p_name = input("Please enter the player's name:\n» ")
-        return self.__p_name
-
-    def return_wrong_players_guess(self):
-        self.__wrong_guessed_letter = input(f"{self.__p_name}, you've guessed the wrong letter, "
-                                            f"please enter a new letter: \n» ")
+        
+        
+    def get_wrong_players_guess(self):
+        return self.__wrong_guessed_letter    
+    def set_wrong_players_guess(self):
+        self.__wrong_guessed_letter.append(self.__chosen_letter)
         return self.__wrong_guessed_letter
 
-    def return_correct_players_guess(self):
-        self.__correct_guessed_letter = input(f'{self.__p_name}, please enter a letter: \n» ')
+
+    def get_correct_players_guess(self):
         return self.__correct_guessed_letter
+    def set_correct_players_guess(self):
+        self.__correct_guessed_letter.append(self.__chosen_letter)
+        return self.__correct_guessed_letter
+    
+    
+    def get_chosen_letter(self):
+        return self.__chosen_letter
+    def set_chosen_letter(self):
+        letter = input(f"{self.__p_name}, please, choose a random letter:\n» ")
+        return letter
 
 
 import random
@@ -57,7 +77,6 @@ class FruitList:
 
     def __init__(self):
         self.__fruits = ['banana', 'jabuticaba', 'pitanga', 'mirtilo', 'morango', 'abacaxi', 'cereja']
-
 
     def chose_random_word_from_list(self):
         fruit = self.__fruits
@@ -71,4 +90,4 @@ class FruitList:
 
 
 h = FruitList()
-print(h.chose_random_word_from_list())
+print(h.())
