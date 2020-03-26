@@ -1,13 +1,13 @@
 from player import Player
 
-class ChosenLetter:
+class EnteredLetter:
 
     def __init__(self):
         self.player = Player()
         self.__chosen_letter = ''
         self.__wrong_guessed_letter = []
         self.__correct_guessed_letter = []
-        self.__p_lives = 5
+
 
 
     def get_wrong_players_guess(self):
@@ -30,11 +30,7 @@ class ChosenLetter:
         letter = input(f"{self.player.get_players_name()}, please, choose a random letter:\n» ")
         return letter
 
-    def get_players_lives(self):
-        return self.__p_lives
-    def set_lost_a_life(self):
-        self.__p_lives -= 1
-        print(f"{self.player.get_players_name()}, you've lost a life!")
+
 
 
 
