@@ -13,7 +13,6 @@ class HangManGame:
         self.fruit_list = FruitList()
         self.player = Player()
 
-
     def principal_menu(self):
         self.__menu = '''
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════ _                                             
@@ -33,14 +32,11 @@ class HangManGame:
  |      / \ »» Rules: 
  |                »ENTER YOUR NAME TO START THE GAME
  |                »A WORD WILL BE CHOSEN RANDOMLY. YOU'LL BE ASKED TO ENTER A LETTER
- |                »YOU OWN 5 CHANCES TO GUESS WRONG ♡ ♡ ♡ ♡ ♡
+ |                »YOU OWN 5 CHANCES TO GUESS WRONG ♥ ♥ ♥ ♥ ♥
 _|___                      
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 '''
         return print(self.__menu)
-
-
-
 
     def get_lost_game(self):
         lost = f'''
