@@ -1,6 +1,35 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+O jogo deverá sortear uma fruta conforme a lista abaixo:
 
+banana
+jabuticaba
+pitanga
+mirtilo
+morango
+abacaxi
+cereja
+O objetivo é acertar o nome da fruta. O jogador informa uma letra e o jogo verifica se a fruta tem essa letra.
+# 
+═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════ _                                             
+                     _
+                    | |                                            
+                    | |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+                    | '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+                    | | | | (_| | | | | (_| | | | | | | (_| | | | |    _
+                    |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|   (_)
+                                        __/ |                      
+                                       |___/          
+  _______
+ |/      |                                             
+ |      (_)
+ |      \|/
+ |       |
+ |      / \ »» Rules: 
+ |                »ENTER YOUR NAME TO START THE GAME
+ |                »A WORD WILL BE CHOSEN RANDOMLY. YOU'LL BE ASKED TO ENTER A LETTER
+ |                »YOU OWN 5 CHANCES TO GUESS WRONG ♥ ♥ ♥ ♥ ♥
+_|___                      
+═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
 1.	Installation process
